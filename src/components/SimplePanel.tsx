@@ -8,7 +8,7 @@ import { PanelDataErrorView } from '@grafana/runtime';
 import ReactDOM from "react-dom";
 import QRCode from "react-qr-code";
 
-interface Props extends PanelProps<SimpleOptions> {}
+interface Props extends PanelProps<SimpleOptions> { }
 
 const getStyles = () => {
   return {
@@ -39,38 +39,26 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
   }
 
   return (
-<div
-  className={cx(
-    styles.wrapper,
-    css`
+    <div
+      className={cx(
+        styles.wrapper,
+        css`
       width: ${width}px;
       height: ${height}px;
     `
-  )}
->
-  <svg
-    className={styles.svg}
-    width={width}
-    height={height}
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    viewBox={`-${width / 2} -${height / 2} ${width} ${height}`}
-  >
-    <g>
-      <circle data-testid="simple-panel-circle" style={{ fill: theme.colors.primary.main }} r={100} />
-    </g>
-  </svg>
+      )}
+    >
 
-  <div className={styles.textBox}>
-    {options.showSeriesCount && (
-      <div data-testid="simple-panel-series-counter">Number of series: {data.series.length}</div>
-    )}
-    <div>Text option value: {options.text}</div>
-  </div>
+      <div className={styles.textBox}>
+        {options.showSeriesCount && (
+          <div data-testid="simple-panel-series-counter">Number of series: {data.series.length}</div>
+        )}
+        <div>Text option value: {options.text}</div>
+      </div>
 
-  <div style={{ background: 'white', padding: '16px' }}>
-    <QRCode value={options.text} />
-  </div>
-</div>
+      <div style={{ background: 'white', padding: '16px' }}>
+        <QRCode value={options.text} />
+      </div>
+    </div>
   );
 };
