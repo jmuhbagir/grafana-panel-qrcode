@@ -48,14 +48,6 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
     `
       )}
     >
-
-      <div className={styles.textBox}>
-        {options.showSeriesCount && (
-          <div data-testid="simple-panel-series-counter">Number of series: {data.series.length}</div>
-        )}
-        <div>Text option value: {options.text}</div>
-      </div>
-
       <div style={{ background: 'white', padding: '16px' }}>
         <QRCode value={options.text} />
       </div>
