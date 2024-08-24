@@ -60,11 +60,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
           <circle data-testid="simple-panel-circle" style={{ fill: theme.colors.primary.main }} r={100} />
         </g>
 
-        <div style={{ background: 'white', padding: '16px' }}>
-          ReactDOM.render(<QRCode value="options.text" />, document.getElementById("Container"));
-        </div>
-        
-
+        ReactDOM.render(<QRCode value="options.text" />, document.getElementById("Container"));
       </svg>
 
       <div className={styles.textBox}>
