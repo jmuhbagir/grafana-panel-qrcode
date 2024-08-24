@@ -48,8 +48,9 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
     `
       )}
     >
-      <div style={{ background: 'white', padding: '16px' }}>
-        <QRCode value={options.text} />
+      <div style={{ background: 'white', padding: '16px', width: '100%', height: '100%' }}>
+        <QRCode style={{ height: "100%", width: "100%" }}
+        value={options.text} />
       </div>
     </div>
   );
