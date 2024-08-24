@@ -5,6 +5,9 @@ import { css, cx } from '@emotion/css';
 import { useStyles2, useTheme2 } from '@grafana/ui';
 import { PanelDataErrorView } from '@grafana/runtime';
 
+import ReactDOM from "react-dom";
+import QRCode from "react-qr-code";
+
 interface Props extends PanelProps<SimpleOptions> {}
 
 const getStyles = () => {
@@ -56,6 +59,12 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
         <g>
           <circle data-testid="simple-panel-circle" style={{ fill: theme.colors.primary.main }} r={100} />
         </g>
+
+        <div style={{ background: 'white', padding: '16px' }}>
+          ReactDOM.render(<QRCode value="options.text" />, document.getElementById("Container"));
+        </div>
+        
+
       </svg>
 
       <div className={styles.textBox}>
