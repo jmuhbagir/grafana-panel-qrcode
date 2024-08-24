@@ -6,35 +6,16 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
   return builder
     .addTextInput({
       path: 'text',
-      name: 'Simple text option',
-      description: 'Description of panel option',
-      defaultValue: 'Default value of text input option',
+      name: 'Value',
+      description: 'Value the QR code will encode',
+      defaultValue: 'https://beta.team'
     })
-    .addBooleanSwitch({
-      path: 'showSeriesCount',
-      name: 'Show series counter',
-      defaultValue: false,
-    })
-    .addRadio({
-      path: 'seriesCountSize',
-      defaultValue: 'sm',
-      name: 'Series counter size',
-      settings: {
-        options: [
-          {
-            value: 'sm',
-            label: 'Small',
-          },
-          {
-            value: 'md',
-            label: 'Medium',
-          },
-          {
-            value: 'lg',
-            label: 'Large',
-          },
-        ],
-      },
-      showIf: (config) => config.showSeriesCount,
-    });
+
+    // TODO - utilize this for something I'm sure we'll want
+    // Like implementing all the options here: https://www.npmjs.com/package/react-qr-code
+    // .addBooleanSwitch({
+    //   path: 'showSeriesCount',
+    //   name: 'Show series counter',
+    //   defaultValue: false,
+    // })
 });
