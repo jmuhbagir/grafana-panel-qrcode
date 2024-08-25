@@ -35,9 +35,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
   const theme = useTheme2();
   const styles = useStyles2(getStyles);
 
-  // convert options.value to a string
-  //options.value = replaceVariables(options.value);
-  let qrcode_value = options.value;
+  let qrcode_value = replaceVariables(options.value);
 
   // TODO - implement this - probably gonna want to return useful errors we can identify
   // if (data.series.length === 0) {
