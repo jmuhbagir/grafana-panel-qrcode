@@ -5,7 +5,7 @@ import { SimplePanel } from './components/SimplePanel';
 export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOptions((builder) => {
   return builder
     .addTextInput({
-      path: 'text',
+      path: 'value',
       name: 'Value',
       description: 'Value the QR code will encode',
       defaultValue: 'https://beta.team'

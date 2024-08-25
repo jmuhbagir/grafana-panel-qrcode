@@ -30,13 +30,22 @@ const getStyles = () => {
   };
 };
 
-export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fieldConfig, id }) => {
+export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fieldConfig, id, replaceVariables }) => {
+
   const theme = useTheme2();
   const styles = useStyles2(getStyles);
 
-  if (data.series.length === 0) {
-    return <PanelDataErrorView fieldConfig={fieldConfig} panelId={id} data={data} needsStringField />;
-  }
+  // convert options.value to a string
+  //options.value = replaceVariables(options.value);
+  let qrcode_value = options.value;
+
+  // TODO - implement this - probably gonna want to return useful errors we can identify
+  // if (data.series.length === 0) {
+  //   return <PanelDataErrorView fieldConfig={fieldConfig} panelId={id} data={data} needsStringField />;
+  // }
+
+  console.log("qrcode_value: ", qrcode_value);
+  console.log("options: ", options);
 
   return (
     <div
@@ -50,7 +59,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fie
     >
       <div style={{ background: 'white', padding: '16px', width: '100%', height: '100%' }}>
         <QRCode style={{ height: "100%", width: "100%" }}
-        value={options.text} />
+          value={qrcode_value}/>
       </div>
     </div>
   );
