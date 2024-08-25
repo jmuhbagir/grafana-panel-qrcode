@@ -30,9 +30,8 @@ const getStyles = () => {
   };
 };
 
-export const SimplePanel: React.FC<Props> = ({ options, data, width, height, fieldConfig, id, replaceVariables }) => {
+export const SimplePanel: React.FC<Props> = ({ options, width, height, replaceVariables}) => {
 
-  const theme = useTheme2();
   const styles = useStyles2(getStyles);
 
   let qrcode_value = replaceVariables(options.value);
