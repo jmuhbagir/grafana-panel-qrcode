@@ -1,0 +1,172 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 2,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "description": "",
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "value": "$values"
+      },
+      "repeat": "values",
+      "repeatDirection": "h",
+      "title": "$values",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "gridPos": {
+        "h": 18,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 1,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "$value"
+      },
+      "title": "Antoine de Saint-Exupery",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "gridPos": {
+        "h": 18,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 5,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PL8dZXjD8meS_WZzEKSReIBPLzKaW3HboH&index=1"
+      },
+      "title": "Youtube Video",
+      "type": "beta-qrcode-panel"
+    }
+  ],
+  "schemaVersion": 39,
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
+          "value": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+        },
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "name": "value",
+        "options": [
+          {
+            "selected": true,
+            "text": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
+            "value": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+          }
+        ],
+        "query": "Perfection is achieved\\, not when there is nothing more to add\\, but when there is nothing left to take away.",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "current": {
+          "selected": true,
+          "text": [
+            "Earth",
+            "Wind",
+            "Fire",
+            "Water"
+          ],
+          "value": [
+            "Earth",
+            "Wind",
+            "Fire",
+            "Water"
+          ]
+        },
+        "hide": 0,
+        "includeAll": false,
+        "multi": true,
+        "name": "values",
+        "options": [
+          {
+            "selected": true,
+            "text": "Earth",
+            "value": "Earth"
+          },
+          {
+            "selected": true,
+            "text": "Wind",
+            "value": "Wind"
+          },
+          {
+            "selected": true,
+            "text": "Fire",
+            "value": "Fire"
+          },
+          {
+            "selected": true,
+            "text": "Water",
+            "value": "Water"
+          }
+        ],
+        "query": "Earth, Wind, Fire, Water",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "QR Code Test",
+  "uid": "ddvtvc2grdq0wb",
+  "version": 7,
+  "weekStart": ""
+}
