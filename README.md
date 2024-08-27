@@ -1,3 +1,21 @@
+# QR Code Panel for Grafana
+
+![](src/img/dashboard.png)
+
+## Introduction
+
+The QR Code panel renders QR codes.
+
+## Getting Started
+
+TODO: Add/update instructions once the plugin is in the grafana catalog
+
+```bash
+grafana-cli pluging install betatech-qrcode-panel
+```
+---
+# Template README below
+
 # Grafana panel plugin template
 
 This template is a starting point for building a panel plugin for Grafana.
