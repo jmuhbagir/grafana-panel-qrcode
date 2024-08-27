@@ -18,9 +18,63 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 1,
   "links": [],
   "panels": [
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 5,
+        "x": 0,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PL8dZXjD8meS_WZzEKSReIBPLzKaW3HboH&index=1"
+      },
+      "title": "Youtube Video",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "description": "",
+      "gridPos": {
+        "h": 9,
+        "w": 5,
+        "x": 5,
+        "y": 0
+      },
+      "id": 13,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "https://github.com/Beta-Technologies/grafana-panel-qrcode"
+      },
+      "title": "QRCode Plugin Repo",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "id": 9,
+      "title": "Variable Interpolation",
+      "type": "row"
+    },
     {
       "datasource": {
         "type": "grafana-testdata-datasource",
@@ -31,7 +85,7 @@
         "h": 8,
         "w": 6,
         "x": 0,
-        "y": 0
+        "y": 10
       },
       "id": 2,
       "options": {
@@ -51,7 +105,7 @@
         "h": 18,
         "w": 12,
         "x": 0,
-        "y": 8
+        "y": 18
       },
       "id": 1,
       "options": {
@@ -61,27 +115,6 @@
         "value": "$value"
       },
       "title": "Antoine de Saint-Exupery",
-      "type": "beta-qrcode-panel"
-    },
-    {
-      "datasource": {
-        "type": "grafana-testdata-datasource",
-        "uid": "trlxrdZVk"
-      },
-      "gridPos": {
-        "h": 18,
-        "w": 12,
-        "x": 12,
-        "y": 8
-      },
-      "id": 5,
-      "options": {
-        "seriesCountSize": "sm",
-        "showSeriesCount": false,
-        "text": "✈️ Engineered by Beta ✈️",
-        "value": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PL8dZXjD8meS_WZzEKSReIBPLzKaW3HboH&index=1"
-      },
-      "title": "Youtube Video",
       "type": "beta-qrcode-panel"
     }
   ],
@@ -167,6 +200,6 @@
   "timezone": "browser",
   "title": "QR Code Test",
   "uid": "ddvtvc2grdq0wb",
-  "version": 7,
+  "version": 1,
   "weekStart": ""
 }
