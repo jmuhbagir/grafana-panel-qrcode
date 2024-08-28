@@ -48,7 +48,7 @@ export const SimplePanel: React.FC<Props> = ({ options, width, height, replaceVa
       )}
     >
       <div style={{ background: 'white', padding: '16px', width: '100%', height: '100%' }}>
-        <QRCode style={{ height: "100%", width: "100%" }}
+        <QRCode data-testid="qrcode-code" style={{ height: "100%", width: "100%" }}
           value={qrcode_value}/>
       </div>
     </div>
