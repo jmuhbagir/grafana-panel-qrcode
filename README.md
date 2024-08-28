@@ -14,4 +14,4 @@ After adding the panel, set the value property to the string to be rendered
 
 ## License
 
-Apache License, see [LICENSE](https://github.com/Beta-Technologies/grafana-panel-qrcode/blob/main/LICENSE).
+MIT License, see [LICENSE](https://github.com/Beta-Technologies/grafana-panel-qrcode/blob/main/LICENSE).
