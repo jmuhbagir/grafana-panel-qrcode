@@ -1,6 +1,6 @@
 import { test, expect } from '@grafana/plugin-e2e';
 
-test('should display circle when data is passed to the panel', async ({
+test('should display qrcode when panel is displayed', async ({
   panelEditPage,
   readProvisionedDataSource,
   page,
