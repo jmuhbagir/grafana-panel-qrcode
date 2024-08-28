@@ -34,11 +34,6 @@ export const SimplePanel: React.FC<Props> = ({ options, width, height, replaceVa
 
   let qrcode_value = replaceVariables(options.value);
 
-  // TODO - implement this - probably gonna want to return useful errors we can identify
-  // if (data.series.length === 0) {
-  //   return <PanelDataErrorView fieldConfig={fieldConfig} panelId={id} data={data} needsStringField />;
-  // }
-
   console.log("qrcode_value: ", qrcode_value);
   console.log("options: ", options);
 
