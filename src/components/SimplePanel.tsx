@@ -34,9 +34,6 @@ export const SimplePanel: React.FC<Props> = ({ options, width, height, replaceVa
 
   let qrcode_value = replaceVariables(options.value);
 
-  console.log("qrcode_value: ", qrcode_value);
-  console.log("options: ", options);
-
   return (
     <div
       className={cx(
