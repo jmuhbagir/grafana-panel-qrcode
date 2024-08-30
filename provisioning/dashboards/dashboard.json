@@ -18,19 +18,33 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 2,
   "links": [],
   "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 32,
+      "panels": [],
+      "title": "Basic Usage",
+      "type": "row"
+    },
     {
       "datasource": {
         "type": "grafana-testdata-datasource",
         "uid": "trlxrdZVk"
       },
+      "description": "Sorry (not sorry)",
       "gridPos": {
         "h": 9,
         "w": 5,
         "x": 0,
-        "y": 0
+        "y": 1
       },
       "id": 5,
       "options": {
@@ -52,7 +66,7 @@
         "h": 9,
         "w": 5,
         "x": 5,
-        "y": 0
+        "y": 1
       },
       "id": 13,
       "options": {
@@ -65,13 +79,37 @@
       "type": "beta-qrcode-panel"
     },
     {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "description": "Test special characters",
+      "gridPos": {
+        "h": 9,
+        "w": 5,
+        "x": 10,
+        "y": 1
+      },
+      "id": 17,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "Torkel Ödegaard"
+      },
+      "title": "Torkel Ödegaard",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 9
+        "y": 10
       },
       "id": 9,
+      "panels": [],
       "title": "Variable Interpolation",
       "type": "row"
     },
@@ -80,14 +118,15 @@
         "type": "grafana-testdata-datasource",
         "uid": "trlxrdZVk"
       },
-      "description": "",
+      "description": "Demonstrate repeating panel variable usage",
       "gridPos": {
         "h": 8,
         "w": 6,
         "x": 0,
-        "y": 10
+        "y": 11
       },
       "id": 2,
+      "maxPerRow": 6,
       "options": {
         "value": "$values"
       },
@@ -101,11 +140,12 @@
         "type": "grafana-testdata-datasource",
         "uid": "trlxrdZVk"
       },
+      "description": "345 character quote from Torkel Ödegaard\n\nDemonstrate single variable interpolation",
       "gridPos": {
-        "h": 18,
-        "w": 12,
+        "h": 10,
+        "w": 6,
         "x": 0,
-        "y": 18
+        "y": 19
       },
       "id": 1,
       "options": {
@@ -114,7 +154,108 @@
         "text": "✈️ Engineered by Beta ✈️",
         "value": "$value"
       },
-      "title": "Antoine de Saint-Exupery",
+      "title": "A long value",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 29
+      },
+      "id": 18,
+      "panels": [],
+      "title": "Hot Links",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "description": "`mailto:` hotlink\n\nEmail the Eliza therapist\n",
+      "gridPos": {
+        "h": 9,
+        "w": 4,
+        "x": 0,
+        "y": 30
+      },
+      "id": 31,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "mailto:eliza@pobox.com"
+      },
+      "title": "Email",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "description": "`tel:` hotlink\n\nCall the Hall & Oats emergency hot line\n",
+      "gridPos": {
+        "h": 9,
+        "w": 4,
+        "x": 4,
+        "y": 30
+      },
+      "id": 30,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "tel:(719) 266-2837"
+      },
+      "title": "Phone",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "description": "`geo:` hot link\n\nBetaTech charge pad in Burlington,  VT\n",
+      "gridPos": {
+        "h": 9,
+        "w": 4,
+        "x": 8,
+        "y": 30
+      },
+      "id": 26,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "geo:44.46574099,-73.1538193"
+      },
+      "title": "Map",
+      "type": "beta-qrcode-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "description": "Trigger email with link to  this dashboard\n\nDemonstrates more complex variable substitution and detailed use of `mailto:` hotlink\n",
+      "gridPos": {
+        "h": 9,
+        "w": 7,
+        "x": 12,
+        "y": 30
+      },
+      "id": 22,
+      "options": {
+        "seriesCountSize": "sm",
+        "showSeriesCount": false,
+        "text": "✈️ Engineered by Beta ✈️",
+        "value": "mailto:${__user.email}?subject=Grafana%20Dashboard&body=You%20scanned%20this%20dashboard%20mailto:${__user.email}.com?subject=Grafana%20Dashboard&body=You%20scanned%20this%20dashboard%20${grafana_url:precentcode}/d/${__dashboard.uid}"
+      },
+      "title": "Email logged in user a link  to this dashboard",
       "type": "beta-qrcode-panel"
     }
   ],
@@ -125,8 +266,8 @@
       {
         "current": {
           "selected": false,
-          "text": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
-          "value": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+          "text": "The goal when creating Grafana was to make the things I found hard, and other people found hard, more easy and accessible. That way, more people could actually start instrumenting their applications and creating dashboards by themselves. Make the tools of observability accessible to everyone in an organization, not just the single Ops person. -Torkel Ödegaard",
+          "value": "The goal when creating Grafana was to make the things I found hard, and other people found hard, more easy and accessible. That way, more people could actually start instrumenting their applications and creating dashboards by themselves. Make the tools of observability accessible to everyone in an organization, not just the single Ops person. -Torkel Ödegaard"
         },
         "hide": 0,
         "includeAll": false,
@@ -135,11 +276,12 @@
         "options": [
           {
             "selected": true,
-            "text": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
-            "value": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+            "text": "The goal when creating Grafana was to make the things I found hard, and other people found hard, more easy and accessible. That way, more people could actually start instrumenting their applications and creating dashboards by themselves. Make the tools of observability accessible to everyone in an organization, not just the single Ops person. -Torkel Ödegaard",
+            "value": "The goal when creating Grafana was to make the things I found hard, and other people found hard, more easy and accessible. That way, more people could actually start instrumenting their applications and creating dashboards by themselves. Make the tools of observability accessible to everyone in an organization, not just the single Ops person. -Torkel Ödegaard"
           }
         ],
-        "query": "Perfection is achieved\\, not when there is nothing more to add\\, but when there is nothing left to take away.",
+        "query": "The goal when creating Grafana was to make the things I found hard\\, and other people found hard\\, more easy and accessible. That way\\, more people could actually start instrumenting their applications and creating dashboards by themselves. Make the tools of observability accessible to everyone in an organization\\, not just the single Ops person. -Torkel Ödegaard\n",
+        "queryValue": "",
         "skipUrlSync": false,
         "type": "custom"
       },
@@ -183,10 +325,37 @@
             "selected": true,
             "text": "Water",
             "value": "Water"
+          },
+          {
+            "selected": false,
+            "text": "Leeloo",
+            "value": "Leeloo"
           }
         ],
-        "query": "Earth, Wind, Fire, Water",
+        "query": "Earth, Wind, Fire, Water, Leeloo",
         "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      },
+      {
+        "current": {
+          "selected": false,
+          "text": "http://localhost:3000",
+          "value": "http://localhost:3000"
+        },
+        "description": "Used to generate complete URL to this dashboard",
+        "hide": 0,
+        "includeAll": false,
+        "multi": false,
+        "name": "grafana_url",
+        "options": [
+          {
+            "selected": true,
+            "text": "http://localhost:3000",
+            "value": "http://localhost:3000"
+          }
+        ],
+        "query": "http://localhost:3000",
         "skipUrlSync": false,
         "type": "custom"
       }
@@ -199,7 +368,7 @@
   "timepicker": {},
   "timezone": "browser",
   "title": "QR Code Test",
-  "uid": "ddvtvc2grdq0wb",
-  "version": 1,
+  "uid": "adwcb8rrwdw5cf",
+  "version": 2,
   "weekStart": ""
 }
