@@ -54,7 +54,7 @@
         "value": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PL8dZXjD8meS_WZzEKSReIBPLzKaW3HboH&index=1"
       },
       "title": "Youtube Video",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "datasource": {
@@ -76,7 +76,7 @@
         "value": "https://github.com/Beta-Technologies/grafana-panel-qrcode"
       },
       "title": "QRCode Plugin Repo",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "datasource": {
@@ -98,7 +98,7 @@
         "value": "Torkel Ödegaard"
       },
       "title": "Torkel Ödegaard",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "collapsed": false,
@@ -133,7 +133,7 @@
       "repeat": "values",
       "repeatDirection": "h",
       "title": "$values",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "datasource": {
@@ -155,7 +155,7 @@
         "value": "$value"
       },
       "title": "A long value",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "collapsed": false,
@@ -190,7 +190,7 @@
         "value": "mailto:eliza@pobox.com"
       },
       "title": "Email",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "datasource": {
@@ -212,7 +212,7 @@
         "value": "tel:(719) 266-2837"
       },
       "title": "Phone",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "datasource": {
@@ -234,7 +234,7 @@
         "value": "geo:44.46574099,-73.1538193"
       },
       "title": "Map",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     },
     {
       "datasource": {
@@ -256,7 +256,7 @@
         "value": "mailto:${__user.email}?subject=Grafana%20Dashboard&body=You%20scanned%20this%20dashboard%20mailto:${__user.email}.com?subject=Grafana%20Dashboard&body=You%20scanned%20this%20dashboard%20${grafana_url:precentcode}/d/${__dashboard.uid}"
       },
       "title": "Email logged in user a link  to this dashboard",
-      "type": "beta-qrcode-panel"
+      "type": "betatech-qrcode-panel"
     }
   ],
   "schemaVersion": 39,
