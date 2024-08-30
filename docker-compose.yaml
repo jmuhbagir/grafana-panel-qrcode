@@ -1,7 +1,7 @@
 services:
   grafana:
     user: root
-    container_name: 'beta-qrcode-panel'
+    container_name: 'betatech-qrcode-panel'
 
     build:
       context: ./.config
@@ -12,13 +12,13 @@ services:
     ports:
       - 3000:3000/tcp
     volumes:
-      - ./dist:/var/lib/grafana/plugins/beta-qrcode-panel
+      - ./dist:/var/lib/grafana/plugins/betatech-qrcode-panel
       - ./provisioning:/etc/grafana/provisioning
-      - .:/root/beta-qrcode-panel
+      - .:/root/betatech-qrcode-panel
 
     environment:
       NODE_ENV: development
-      GF_LOG_FILTERS: plugin.beta-qrcode-panel:debug
+      GF_LOG_FILTERS: plugin.betatech-qrcode-panel:debug
       GF_LOG_LEVEL: debug
       GF_DATAPROXY_LOGGING: 1
-      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: beta-qrcode-panel
+      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: betatech-qrcode-panel

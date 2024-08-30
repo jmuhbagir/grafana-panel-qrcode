@@ -1,5 +1,5 @@
 {
-  "name": "qrcode",
+  "name": "QR code",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
@@ -11,10 +11,10 @@
     "lint:fix": "npm run lint -- --fix",
     "e2e": "playwright test",
     "server": "docker compose up --build",
-    "sign": "npx --yes @grafana/sign-plugin@latest"
+    "sign": "npx --yes @grafana/sign-plugin@latest  --rootUrls https://github.com/Beta-Technologies/grafana-panel-qrcode"
   },
-  "author": "Beta",
-  "license": "Apache-2.0",
+  "author": "BetaTech",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@grafana/eslint-config": "^7.0.0",
