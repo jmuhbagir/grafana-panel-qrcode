@@ -19,7 +19,12 @@
         "url": "https://github.com/Beta-Technologies/grafana-panel-qrcode"
       }
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "name": "Panel",
+        "path": "img/dashboard.png"
+      }
+    ],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },
