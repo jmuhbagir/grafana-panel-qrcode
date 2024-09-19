@@ -6,7 +6,7 @@
 Utilizing the react QR code library, this plugin takes a string and renders it as a QR code. Variable interpolation is implemented.
 
 ## Requirements
-Grafana >= 10.0.0
+Grafana >= 9.0.0
 
 ## Getting Started
 
