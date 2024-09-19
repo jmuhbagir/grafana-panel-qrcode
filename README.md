@@ -1,6 +1,6 @@
 # QRcode
 
-![Dashboard](https://github.com/Beta-Technologies/grafana-panel-qrcode/blob/main/src/img/dashboard.png)
+![Dashboard](https://github.com/Beta-Technologies/grafana-panel-qrcode/blob/main/src/img/dashboard.png:?raw=true)
 
 ## Overview / Introduction
 Utilizing the react QR code library, this plugin takes a string and renders it as a QR code. Variable interpolation is implemented.
