@@ -13,7 +13,14 @@ Grafana >= 9.0.0
 After adding the panel, set the value property to the string to be rendered
 
 ## Package
+### Sign
+```
+export GRAFANA_ACCESS_POLICY_TOKEN=<redacted>
+npx @grafana/sign-plugin@latest --rootUrls https://github.com/Beta-Technologies/grafana-panel-qrcode
+```
+
 ### Build / Zip / Generate SHA1
+
 ```
 npm run build
 mv dist betatech-qrcode-panel
@@ -36,11 +43,7 @@ git commit -m 'new version of plugin'
 git push
 ```
 
-### Sign
-```
-export GRAFANA_ACCESS_POLICY_TOKEN=<redacted>
-npx @grafana/sign-plugin@latest --rootUrls https://github.com/Beta-Technologies/grafana-panel-qrcode
-```
+
 
 ## License
 
