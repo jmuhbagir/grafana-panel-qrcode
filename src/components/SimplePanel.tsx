@@ -2,7 +2,7 @@ import React from 'react';
 import { PanelProps } from '@grafana/data';
 import { SimpleOptions } from 'types';
 import { css, cx } from '@emotion/css';
-import { useStyles2} from '@grafana/ui';
+import { useStyles2 } from '@grafana/ui';
 
 import QRCode from "react-qr-code";
 
@@ -28,7 +28,7 @@ const getStyles = () => {
   };
 };
 
-export const SimplePanel: React.FC<Props> = ({ options, width, height, replaceVariables}) => {
+export const SimplePanel: React.FC<Props> = ({ options, width, height, replaceVariables }) => {
 
   const styles = useStyles2(getStyles);
 
@@ -44,10 +44,17 @@ export const SimplePanel: React.FC<Props> = ({ options, width, height, replaceVa
     `
       )}
     >
-      <div style={{ background: 'white', padding: '16px', width: '100%', height: '100%' }}>
-        <QRCode data-testid="qrcode-code" style={{ height: "100%", width: "100%" }}
-          value={qrcode_value}/>
+      return (
+      <div style={{ width: '100%', height: '100%' }}>
+        <img src="https://api.eziswaf.net/v1/app/logo/qrbackground.png" style={{ width: '100%', height: '100%' }} />
+        <QRCode data-testid="qrcode-code" style={{
+          width: '70%', height: '70%', position: 'absolute',
+          left: '50%',
+          top: '60%',
+          transform: 'translate(-50%, -50%)'
+        }} value={qrcode_value} />
       </div>
+      );
     </div>
   );
 };
