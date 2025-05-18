@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
   "name": "QR code",
-  "id": "betatech-qrcode-panel",
+  "id": "masjed-qrcode-panel",
   "info": {
     "keywords": ["panel"],
     "description": "Render a QR code",
     "author": {
-      "name": "Beta Technologies"
+      "name": "Masjed fork Beta Technologies"
     },
     "logos": {
       "small": "img/logo.svg",
@@ -16,7 +16,7 @@
     "links": [
       {
         "name": "GitHub",
-        "url": "https://github.com/Beta-Technologies/grafana-panel-qrcode"
+        "url": "https://github.com/jmuhbagir/grafana-panel-qrcode"
       }
     ],
     "screenshots": [

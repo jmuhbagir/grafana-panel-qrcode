@@ -8,7 +8,7 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
       path: 'value',
       name: 'Value',
       description: 'Value the QR code will encode',
-      defaultValue: 'https://beta.team'
+      defaultValue: 'https://masjed.id'
     })
 
     // TODO - utilize this for something I'm sure we'll want
